@@ -4,7 +4,7 @@ import kotlin.math.min
 import kotlin.math.sign
 
 fun main() {
-    val input = readInput("Day5")
+    val input = readInput("Day05")
 
     println("[Day 5] Part 1: ${Day5.part1(input)}")
     println("[Day 5] Part 2: ${Day5.part2(input)}")

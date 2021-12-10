@@ -1,7 +1,7 @@
 import kotlin.math.abs
 
 fun main() {
-    val input = readInput("Day7")
+    val input = readInput("Day07")
 
     println("[Day 7] Part 1: ${Day7.part1(input)}")
     println("[Day 7] Part 2: ${Day7.part2(input)}")

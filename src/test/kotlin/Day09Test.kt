@@ -1,25 +1,29 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-internal class Day7Test {
+internal class Day09Test {
     private val testInput = listOf(
-       "16,1,2,0,4,2,7,1,2,14",
+        "2199943210",
+        "3987894921",
+        "9856789892",
+        "8767896789",
+        "9899965678",
     )
 
     @Test
     fun testPart1() {
-        val expectedValue = 37
+        val expectedValue = 15
 
-        Day7.part1(testInput).apply {
+        Day9.part1(testInput).apply {
             assertThat(this).isEqualTo(expectedValue)
         }
     }
 
     @Test
     fun testPart2() {
-        val expectedValue = 168
+        val expectedValue = 1134
 
-        Day7.part2(testInput).apply {
+        Day9.part2(testInput).apply {
             assertThat(this).isEqualTo(expectedValue)
         }
     }

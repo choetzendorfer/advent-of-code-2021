@@ -1,7 +1,7 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-internal class Day6Test {
+internal class Day06Test {
     private val testInput = listOf(
         "3,4,3,1,2",
     )

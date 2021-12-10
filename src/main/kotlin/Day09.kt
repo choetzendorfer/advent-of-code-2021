@@ -1,5 +1,5 @@
 fun main() {
-    val input = readInput("Day9")
+    val input = readInput("Day09")
 
     println("[Day 9] Part 1: ${Day9.part1(input)}")
     println("[Day 9] Part 2: ${Day9.part2(input)}")

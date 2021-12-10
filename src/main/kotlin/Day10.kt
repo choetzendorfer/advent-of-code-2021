@@ -60,22 +60,17 @@ object Day10 {
 
     private fun List<Char>.parseLine(): ParseResult {
         val openingChars = mutableListOf<Char>()
-        var iCol = 0
-
-        while (iCol < this.size) {
-            val currentChar = this[iCol]
-            if (currentChar.isOpeningChar()) {
-                openingChars.add(currentChar)
+        forEach { char ->
+            if (char.isOpeningChar()) {
+                openingChars.add(char)
             } else {
                 val lastOpeningTag = openingChars.removeLast()
                 val expectedClosingTag = openingToClosing[lastOpeningTag]
-                if (currentChar != expectedClosingTag) {
-                    return ParseResult.SyntaxError(currentChar)
+                if (char != expectedClosingTag) {
+                    return ParseResult.SyntaxError(char)
                 }
             }
-            iCol++
         }
-
         return ParseResult.AutoComplete(openingChars.map { openingToClosing[it]!! }.reversed())
     }
 
